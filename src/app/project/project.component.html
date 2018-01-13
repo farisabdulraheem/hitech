@@ -1,0 +1,72 @@
+
+    <!-- Main Content -->
+    <div id="main-content" class="site-main clearfix">
+            <div id="content-wrap">
+                <div id="site-content" class="site-content clearfix">
+                    <div id="inner-content" class="inner-content-wrap">
+                        <div class="page-content">
+                            <!-- Portfolio 2 -->
+                            <div class="row-portfolio-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="40"></div>
+    
+                                            <div class="wprt-portfolio-grid" data-column="3" data-column2="3" data-column3="2" data-column4="1" data-gaph="30" data-gapv="30">
+                                                <div id="project-filter" class="filter-light">
+                                                    <div class="inner">
+                                                        <div data-filter="*" class="cbp-filter-item"><span>SHOW ALL</span></div>
+                                                        <div data-filter=".repairing" class="cbp-filter-item"><span>REPAIRING</span></div>
+                                                        <div data-filter=".construction" class="cbp-filter-item"><span>CONSTRUCTION</span></div>
+                                                        <div data-filter=".office" class="cbp-filter-item"><span>OFFICE</span></div>
+                                                        <div data-filter=".building" class="cbp-filter-item"><span>BUILDING</span></div>
+                                                        <div data-filter=".painting" class="cbp-filter-item"><span>TILING</span></div>
+                                                    </div>
+                                                </div><!-- /.project-filter -->
+    
+                                                
+                                                                <!-- <div   *ngIf="this.img" >
+                                                                    <div class="col-md-6" *ngFor="let img of this.img" >
+                                                                        
+                                                                    
+                                                                    <a [routerLink]="['./projectdetail']"  (click)="refresh()">
+                                                                        <img class="center" [src]="'data:image/jpeg;base64,'+img.image"  width="250px" height="250px" align="middle">
+                                                                       <br> </a>
+                                                                    </div>  
+                                                                    </div>   -->
+                                                                    
+                                                                <!-- <div class="image123" *ngIf="this.img">
+                                                                        <div class="imgContainer" *ngFor="let i of this.img">
+                                                                       
+                                                                   <img [routerLink]="['./projectdetail']"  (click)="refresh1()" [src]="'data:image/jpeg;base64,'+i.image " class="imagehome"  >
+                                                                                
+                                                                        </div>
+                                                                 </div> -->
+                                                                              
+                                        <ul id="rig" *ngIf="this.img">
+                                            <li *ngFor="let i of this.img">
+                                                <a  class="rig-cell"  [routerLink]="['./projectdetail', i.project_id]"  (click)="refresh()" >
+                                                        <img [src]="'data:image/jpeg;base64,'+i.image" class="imagehome"  >
+                                                    <span class="rig-overlay"></span>
+                                                    <span class="rig-text"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+    
+                                                
+                                              
+                                            </div><!-- /.wprt-portfolio-grid -->
+    
+                                            <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="40"></div>
+                                        </div><!-- /.cold-md-12 -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container-fluid -->
+                            </div>
+                            <!-- Portfolio 2 -->
+                        </div><!-- /.page-content -->
+                    </div><!-- /#inner-content -->
+                </div><!-- /#site-content -->
+            </div><!-- /#content-wrap -->
+        </div>
+        <!-- /Main Content -->
+     

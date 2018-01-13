@@ -1,0 +1,130 @@
+
+
+    <!-- Main Content -->
+    <div id="main-content" class="site-main clearfix">
+            <div id="content-wrap">
+                <div id="site-content" class="site-content clearfix">
+                    <div id="inner-content" class="inner-content-wrap">
+                        <div class="page-content">
+                              <!-- Project Detail-->
+                            <div class="row-project-detail">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="40"></div>
+                                        </div><!-- /.col-md-12 -->
+
+                                        <div class="col-md-12" >
+                                            <div class="wprt-image-slider arrow-style-2 arrow-square arrow-center offset0i offset-v-0 has-arrows" data-auto="true" data-loop="false" data-gap="0" data-column="1" data-column2="1" data-column3="1">
+                                                <div class="owl-carousel owl-theme" >
+                                                <div *ngFor="let pr of pro1">
+                                                    <div class="item">
+                                                         <img  [src]="'data:image/jpeg;base64,' +pr.image">               
+                                                                    
+                                                        <a class="zoom-popup cbp-lightbox" href="assets/img/projects/project-11-1366-700.jpg" data-title="House Off Card"><i class="fa fa-arrows"></i></a>
+                                                    </div>
+                                                </div>    
+
+                                                   <!-- /.item -->
+    
+                                                    <!-- <div class="item">
+                                                        <img  [src]="'data:image/jpeg;base64,'+this.pro1[0].image">            
+                                                                    
+                                                        <a class="zoom-popup cbp-lightbox" href="assets/img/projects/project-12-1366-700.jpg" data-title="House Off Card"><i class="fa fa-arrows"></i></a>
+                                                    </div> -->
+                                                    <!-- /.item -->
+    
+                                                    <!-- <div class="item">
+                                                        <img  [src]="'data:image/jpeg;base64,'+this.pro1[0].image">           
+                                                                    
+                                                        <a class="zoom-popup cbp-lightbox" href="assets/img/projects/project-13-1366-700.jpg" data-title="House Off Card"><i class="fa fa-arrows"></i></a>
+                                                    </div> -->
+                                                    <!-- /.item -->
+                                                </div>
+                                            </div><!-- /.wprt-image-slider -->
+                                        </div><!-- /.col-md-12 -->  
+                                        <div class="col-md-12">
+                                            <div class="wprt-spacer clearfix" data-desktop="53" data-mobi="40" data-smobi="40"></div>
+                                        </div><!-- /.col-md-12 -->
+                                    </div><!-- /.row -->
+    
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="wprt-project-overview" >
+                                                <div class="inner" *ngIf="this.pro">
+                                                    <h2 class="heading margin-bottom-18 font-size-22"><strong>Project Name:</strong>&nbsp;&nbsp;{{this.pro.projectName}}</h2>
+    
+                                                    <!-- <div class="wprt-spacer clearfix" data-desktop="25" data-mobi="25" data-smobi="25"></div> -->
+    
+                                                    <div class="wprt-project-overview-content">
+                                                        <p class="content" *ngIf="this.pro">
+                                                           <strong>Project Description:&nbsp;&nbsp;</strong> 
+                                                            {{this.pro.projectDescription}}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.col-md-8 -->
+    
+                                        <div class="col-md-4">
+                                            <div class="wprt-project-details" *ngIf="this.pro">
+                                                <h2 class="heading margin-bottom-15 font-size-22"><strong>Location:&nbsp;&nbsp;</strong>{{this.pro.projectLocation}}</h2>
+    
+                                                <!-- <div class="wprt-spacer clearfix" data-desktop="25" data-mobi="25" data-smobi="25"></div> -->
+                                                
+                                                <!-- <div class="wprt-info-list clearfix">
+                                                        <span class="title">
+                                                            Client
+                                                        </span>
+    
+                                                        <span class="text">
+                                                            <span>:</span>New York, USA
+                                                        </span>
+                                                 </div>
+    
+                                                 <div class="wprt-info-list clearfix">
+                                                        <span class="title">
+                                                            Company
+                                                        </span>
+    
+                                                        <span class="text">
+                                                            <span>:</span>Kenyon construction
+                                                        </span>
+                                                 </div>
+    
+                                                 <div class="wprt-info-list clearfix">
+                                                        <span class="title">
+                                                            Date
+                                                        </span>
+    
+                                                        <span class="text">
+                                                            <span>:</span>October 2016
+                                                        </span>
+                                                 </div>
+    
+                                                 <div class="wprt-info-list clearfix">
+                                                        <span class="title">
+                                                            Project Type
+                                                        </span>
+    
+                                                        <span class="text">
+                                                            <span>:</span>House, Building
+                                                        </span>
+                                                 </div> -->
+                                            </div>
+                                        </div><!-- /.col-md-4 -->
+    
+                                        <div class="col-md-12">
+                                            <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="40"></div>
+                                        </div>
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </div>
+                            <!-- /Project Detail -->
+                        </div><!-- /.page-content -->
+                    </div><!-- /#inner-content -->
+                </div><!-- /#site-content -->
+            </div><!-- /#content-wrap -->
+        </div>
+        <!-- /Main Content -->
+    
